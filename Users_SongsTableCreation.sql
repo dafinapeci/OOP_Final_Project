@@ -21,6 +21,6 @@ CREATE TABLE songs (
 );
 
 CREATE TABLE playlists (
-	id int primary key identity,
+    id int primary key identity,
     name VARCHAR(255) NOT NULL
 );
