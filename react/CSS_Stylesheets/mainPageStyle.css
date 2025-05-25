@@ -1,0 +1,441 @@
+
+
+.main-page {/*default features*/
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+.strip {/*for the strip features*/
+  background-color: #000;
+  width: 100%;
+  height: 9vh;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.strip img {
+  height: 40px;
+  margin-right: 40px;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px; 
+}
+
+.buttonD {/*each button described with their features*/
+  margin-top: 20px;
+  position: flex;
+  left: 18%;
+  order: 1;
+  transform: translateX(50%);
+}
+
+.buttonL {
+  margin-top: 20px;
+  position: flex;
+  left: 30%;
+  order: 2;
+  transform: translateX(400%);
+}
+
+.buttonP {
+  margin-top: 20px;
+  position: flex;
+  left: 30%;
+  order: 3;
+  transform: translateX(520%);
+}
+  .buttonD button{
+    padding: 8% 16%; 
+    font-size: 16px; 
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    align-items: center;
+  }
+  .buttonL button{
+    padding: 8% 16%; 
+    font-size: 16px; 
+    background-color: #000000; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    align-items: center;
+  }
+  .buttonP button{
+    padding: 8% 16%;
+    font-size: 16px; 
+    background-color: #000000;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    align-items: center;
+  }
+  .buttonD button:hover,.buttonL button:hover,.buttonP button:hover{/*their hovers give same reaction*/
+    background-color: white;
+    color: black;
+  }
+  .containerAll {
+    background-color: antiquewhite;
+    min-height: 72vh;
+    height: 100%; 
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative; 
+      overflow-y: auto;
+  }
+
+  .upperbox, .innerbox, .plusbox {/*this one gives general */
+    position: relative;
+    z-index: 1; 
+  }
+  
+
+  .upperbox {/*this is spesific for each*/
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 8%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+  }
+  .upperbox button {
+
+    flex: 1; 
+    height: 100%;
+    font-size: 16px;
+    background-color: #4f4e4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .upperbox button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .upperbox .left-btn {
+    align-self: flex-start;
+  }
+  
+  .upperbox .right-btn {
+    align-self: flex-end;
+  }
+  .upperbox, .innerbox, .plusbox {
+    position: relative;
+    z-index: 1;
+  }
+  .innerbox {/*general for innerbox*/
+
+    top: 12%;
+    left: 2%;
+    width: 96%;
+    margin-top: 2px;
+    height: 8%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+  }
+  
+  .plusbox {/*general for the plusboxes*/
+    margin-top: 2px;
+    top: 22%;
+    left: 2%;
+    width: 96%;
+    height: 8%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+  }
+  .plusbox button {
+    flex: 1;
+    height: 100%;
+    font-size: 16px;
+    background-color: #4f4e4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .plusbox button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .bottom {/*general features of the bottom*/
+    position:fixed;     
+    bottom: 0;           
+    left: 0;
+    width: 100%;         
+    background-color: #333;
+    padding: 0.2% 0;
+    z-index: 999;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  #myProgressBar {
+    width: 80%;          
+    margin-bottom: 15px;
+    height: 8px;         
+    background-color: #555; 
+    border-radius: 5px;
+  }
+  
+  #myProgressBar::-webkit-progress-bar {/*the shape of the bar is decided in here*/
+    background-color: #444;
+  }
+  
+  #myProgressBar::-webkit-progress-value {
+    background-color: #f39c12; 
+  }
+  .bottom input[type="range"] {
+    width: 80%; 
+    height: 8px; 
+    -webkit-appearance: none; 
+    appearance: none;
+    background: #555; 
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+
+  .bottom input[type="range"]::-webkit-slider-runnable-track {/* Sets the track appearance for Chrome  */
+    height: 8px;
+    background: #1bb74f; 
+    border-radius: 5px;
+  }
+  
+
+  .bottom input[type="range"]::-webkit-slider-thumb {/* Styles the draggable thumb in Chrome */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom input[type="range"]::-webkit-slider-thumb:hover { /* Changes thumb color on hover in Chrome*/
+    background: #4CAF50; 
+  }
+  
+  .bottom input[type="range"]::-moz-range-track {/*same for firefox*/
+    height: 8px;
+    background: #4CAF50;
+    border-radius: 5px;
+  }
+  
+  .bottom input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .bottom input[type="range"]::-moz-range-thumb:hover {
+    background: #4CAF50;
+  }
+
+
+  .icons {/*general describe of the icons*/
+    display: flex;
+    justify-content: space-between;
+    width: 90%;           
+    margin-bottom: 1px;
+  }
+  
+  .icon {
+    
+    font-size: 50px; 
+  }
+  
+  .icons i {
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .icons i:hover {
+    color: #f39c12; 
+  }
+  .icons button {/*for each icons*/
+    font-size: 35px;  
+    background-color: transparent; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    width: 60px;  
+    height: 60px; 
+  }
+  
+
+  .icons button.playing {
+    color: #27ae60; 
+  }
+  
+
+  .icons button.stopped {
+    color: #e74c3c; 
+  }
+  
+  .songInfo {
+    width: 90%;      
+    color: white;
+    text-align: center;
+  }
+  
+  .songInfo p {
+    font-size: 14px;
+  }
+
+  .leftbtn.active,
+  .rightbtn.active {
+    background-color: #333;
+    color: #fff;
+  }
+  .playlistWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .innerbox2 {/*same logic about boxes continious here*/
+    width: 100px;
+    height: 100px;
+    background-color: #292929;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .plusbox {
+    width: 100px;
+    bottom: 0;
+    height: 100px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .plusbox button {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  textarea {
+
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align:center;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 16px; 
+    line-height: 12px; 
+  }
+  .playlistDetail {/*details of the playlist*/
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 200px;
+    gap: 10px;
+    padding: 20px;
+  
+  }
+  
+  .emptyPage {
+    
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 1px dashed gray;
+    border-radius: 10px;
+
+  }
+  .playBtn {
+    margin-top: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .playBtn:hover {
+    background-color: #45a049;
+  }
+  
+  .innerbox2 button {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .innerbox2 button:hover {
+    background-color: #555;
+  }
