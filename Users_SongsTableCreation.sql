@@ -19,3 +19,8 @@ CREATE TABLE songs (
     time FLOAT,
     filePath VARCHAR(255)
 );
+
+CREATE TABLE playlists (
+	id int primary key identity,
+    name VARCHAR(255) NOT NULL
+);
