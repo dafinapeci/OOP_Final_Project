@@ -100,27 +100,3 @@ body{/*here is the general struct of the page*/
   background-color: rgba(110, 184, 227, 0.8); 
 }
   
-.ekstra{
-  position: absolute; 
-  bottom: 5%; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  z-index: 10;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7); 
-  border-radius: 5px; 
-  color: white;
-  font-size: 20px;
-}
-.ekstra button {
-  padding: 20px 40px;
-  font-size: 22px;
-  background-color: rgba(110, 184, 227, 0.7);
-  color: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
